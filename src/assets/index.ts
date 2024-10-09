@@ -5,6 +5,9 @@ import Service from "@/assets/images/service.webp";
 import ParumalaThirumeni from "@/assets/images/parumala-thirumeni.png";
 import WaveBackground from "@/assets/images/wave-history.png";
 import MusicIllustration from "@/assets/images/music.png";
+import Kratos24 from "@/assets/images/Kratos24.png";
+import thirumeni from "@/assets/images/thirumeni.png";
+import Logo from "@/assets/images/logo.png";
 
 export const IMAGES = {
   "group-photo": GroupPhoto,
@@ -14,4 +17,7 @@ export const IMAGES = {
   parumalaThirumeni: ParumalaThirumeni,
   waveBackground: WaveBackground,
   musicIllustration: MusicIllustration,
+  kratos24: Kratos24,
+  thirumeni: thirumeni,
+  logo: Logo,
 };

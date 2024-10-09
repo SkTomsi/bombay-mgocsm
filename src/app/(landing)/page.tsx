@@ -4,6 +4,8 @@ import { Hero } from "@/features/landing-page/components/hero-section";
 import Presidents from "@/features/landing-page/components/presidents-section";
 import History from "@/features/landing-page/components/history-section";
 import DivineRagasBanner from "@/features/landing-page/components/divine-ragas-banner";
+import Footer from "@/features/landing-page/components/footer";
+
 export default function Home() {
   return (
     <>
@@ -13,6 +15,7 @@ export default function Home() {
       <Presidents />
       <History />
       <DivineRagasBanner />
+      <Footer />
     </>
   );
 }

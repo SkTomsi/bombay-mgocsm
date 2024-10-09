@@ -50,9 +50,9 @@ export default function About() {
         <Image
           src={wave}
           alt="wave"
-          className="object-contain absolute md:-top-[70%] md:z-0 md:left-0 w-full"
+          className="object-contain absolute md:-top-[40%] md:z-0 md:left-0 w-full"
         />
-        <h1 className="relative z-10 text-3xl md:text-4xl font-bold font-neue text-navy-blue tracking-tighter text-center md:leading-snug md:w-[60%] md:mx-auto px-">
+        <h1 className="relative z-10 text-3xl md:text-5xl font-bold font-neue text-navy-blue tracking-tighter text-center md:leading-snug md:w-[60%] md:mx-auto">
           Rooted in
           <span className="bg-primary-light px-2 pt-2 text-navy-blue rounded-2xl font-neue md:mx-4 flex-nowrap">
             Orthodox wisdom

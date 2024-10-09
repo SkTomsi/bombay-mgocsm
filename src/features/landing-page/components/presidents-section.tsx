@@ -1,10 +1,10 @@
+import { IMAGES } from "@/assets";
 import Image from "next/image";
-import thirumeni from "@/assets/images/thirumeni.png";
 
 export default function Presidents() {
   return (
     <div className="md:px-32 relative my-20 px-5 bg-brand-bg">
-      <h1 className="relative text-3xl md:text-4xl font-bold font-neue text-navy-blue tracking-tighter text-center md:leading-snug md:w-[60%] md:mx-auto mb-12 leading-snug">
+      <h1 className="relative text-3xl md:text-5xl font-bold font-neue text-navy-blue tracking-tighter text-center md:leading-snug md:mx-auto mb-12 leading-snug">
         A Message from our
         <span className="bg-primary-light px-2 pt-2 text-navy-blue rounded-2xl font-neue md:mx-4 flex-nowrap mx-2">
           Presidents
@@ -19,7 +19,7 @@ export default function Presidents() {
           >
             <div className="flex-grow relative">
               <Image
-                src={thirumeni}
+                src={IMAGES.thirumeni}
                 alt={`President ${index}`}
                 className="h-[80%] md:h-full w-fit object-contain absolute md:-bottom-[7%] bottom-0 left-0"
               />

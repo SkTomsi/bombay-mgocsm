@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Logo from "@/assets/images/logo.png";
 import Image from "next/image";
 import { MenuIcon } from "lucide-react";
 import { Crimson_Text } from "next/font/google";
+import { IMAGES } from "@/assets";
 
 const satoshi = localFont({
   src: "../assets/fonts/Satoshi-Variable.ttf",
@@ -44,7 +44,7 @@ export default function RootLayout({
           <header className="flex items-center justify-between w-full ">
             <div className="fixed top-0 w-full p-4 flex items-center justify-between z-40 bg-brand-bg px-10">
               <Image
-                src={Logo}
+                src={IMAGES.logo}
                 alt="logo"
                 className="h-10 object-contain w-fit"
               />

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Kratos24 from "@/assets/images/Kratos24.png";
 import { CustomButton } from "./CustomButtom";
+import { IMAGES } from "@/assets";
 
 export function EventGrid() {
   const EventCard = () => {
@@ -8,7 +8,7 @@ export function EventGrid() {
       <div className="bg-[#FFF4D4] border border-brand-yellow flex items-start justify-start rounded-2xl w-full p-4 gap-4 h-48 md:h-auto md:min-w-[80%] md:max-w-[80%] md:gap-12">
         <div className="aspect-square md:aspect-video h-full object-cover rounded-xl overflow-hidden border border-white shadow-lg">
           <Image
-            src={Kratos24}
+            src={IMAGES.kratos24}
             alt="Event 1"
             className="w-full h-full object-cover rounded-lg "
           />
