@@ -41,8 +41,8 @@ export default function RootLayout({
         className={`${crimsonText.variable} ${satoshi.className} ${neue.variable} antialiased`}
       >
         <main className="flex flex-col min-h-screen relative">
-          <header className="flex items-center justify-between w-full bg-brand-bg">
-            <div className="fixed top-[0.6rem] w-full p-2 flex items-center justify-between z-40 bg-">
+          <header className="flex items-center justify-between w-full ">
+            <div className="fixed top-0 w-full p-4 flex items-center justify-between z-40 bg-brand-bg px-10">
               <Image
                 src={Logo}
                 alt="logo"

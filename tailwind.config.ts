@@ -67,7 +67,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
-        "brand-yellow": "8px 8px 0px 0px rgba(var(--brand-yellow))",
+        "brand-yellow": "6px 6px 0px 0px rgba(var(--brand-yellow))",
       },
     },
   },
