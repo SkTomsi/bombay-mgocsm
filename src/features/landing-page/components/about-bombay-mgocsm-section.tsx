@@ -45,7 +45,7 @@ export default function About() {
   };
 
   return (
-    <div className="md:my-40 my-10 relative">
+    <div className="md:my-20 my-10 h-full">
       <div className="relative">
         <Image
           src={wave}
@@ -61,7 +61,7 @@ export default function About() {
         </h1>
       </div>
       <div className="px-5 md:px-32 md:mt-20 mt-12">
-        <div className=" flex flex-col lg:grid gap-6 lg:grid-cols-9 lg:grid-rows-9 h-[600px] tracking-tighter">
+        <div className=" flex flex-col lg:grid gap-6 lg:grid-cols-9 lg:grid-rows-9 tracking-tighter">
           <GridItem className="bg-[#FCECC7] col-span-3 row-span-3">
             <div className="flex gap-x-3 items-center">
               <Image
