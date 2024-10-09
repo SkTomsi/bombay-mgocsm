@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function History() {
   return (
-    <div className="md:my-20 my-10 px-5 md:px-32 relative overflow-hidden">
+    <div className="md:my-20 my-10 px-5 md:px-32 relative overflow-hidden bg-brand-bg">
       <h1 className="relative text-3xl md:text-4xl font-bold font-neue text-navy-blue tracking-tighter text-center md:leading-snug md:w-[60%] md:mx-auto mb-12">
         Our
         <span className="bg-primary-light px-2 pt-2 text-navy-blue rounded-2xl font-neue md:mx-4 flex-nowrap mx-2">
@@ -20,7 +20,7 @@ export default function History() {
         </div>
         <div className="md:flex-1 ">
           <div className="tracking-tighter flex flex-col gap-4 px-3">
-            <h1 className="md:text-5xl text-4xl font-bold font-crimson text-black">
+            <h1 className="md:text-5xl text-4xl font-bold font-crimson text-navy-blue">
               Mar Gregorios Orthodox Christian Student Movement
             </h1>
             <p className="text-lg font-bold text-navy-blue">

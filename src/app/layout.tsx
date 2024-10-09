@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${crimsonText.variable} ${satoshi.className} ${neue.variable} antialiased`}
+        className={`${crimsonText.variable} ${satoshi.className} ${neue.variable} antialiased bg-brand-bg`}
       >
         <main className="flex flex-col min-h-screen relative">
           <header className="flex items-center justify-between w-full ">

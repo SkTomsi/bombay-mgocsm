@@ -17,7 +17,7 @@ const config: Config = {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
-        "brand-bg": "#FFFCF3",
+        "brand-bg": "#FFF9E7",
         "brand-yellow": "#F4BC43",
         "primary-light": "#F7D46C",
         "navy-blue": "#173F63",

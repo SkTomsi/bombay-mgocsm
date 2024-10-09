@@ -6,8 +6,9 @@ import { CustomButton } from "./CustomButtom";
 export function Hero() {
   return (
     <div className="flex flex-col items-center justify-items-center gap-4 relative w-full text-center pb-10 md:pb-30">
-      <div className="-z-20 bg-[url('/blue-bg.webp')] bg-no-repeat absolute bg-cover max-sm:bg-center inset-0 top-[50%] md:top-80" />
-      <div className="absolute inset-0 -z-30 bg-[url('/contour.png')] bg-cover bg-center opacity-20 [mask-image:linear-gradient(to_top,transparent,black_20%,black_80%,transparent)]" />
+      <div className="-z-10 bg-[url('/blue-bg.webp')] bg-no-repeat absolute bg-cover max-sm:bg-center inset-0 top-[50%] md:top-80" />
+      <div className="absolute inset-0 -z-10 bg-[url('/contour.png')] bg-cover bg-center opacity-20 [mask-image:linear-gradient(to_top,transparent,black_20%,black_80%,transparent)]" />
+      <div className="h-full w-full absolute top-0 left-0 bg-brand-bg -z-20" />
 
       <div className="hidden lg:block">
         <Image
@@ -27,7 +28,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center w-full md:max-w-7xl mx-auto px-5 md:pt-20 pt-32">
+      <div className="relative flex flex-col items-center justify-center w-full md:max-w-7xl mx-auto px-5 md:pt-20 pt-32">
         <div className="w-full h-full relative z-10 items-center flex justify-center flex-col ">
           <p className="tracking-tight  border border-brand-yellow rounded-full px-5 w-fit bg-[#FDF3D4] mb-4 font-medium text-md">
             MGOCSM - DIOCESE OF BOMBAY

@@ -45,7 +45,7 @@ export default function About() {
   };
 
   return (
-    <div className="md:my-20 my-10 h-full">
+    <div className="md:my-20 my-10 h-full bg-brand-bg">
       <div className="relative">
         <Image
           src={wave}
@@ -134,9 +134,7 @@ export default function About() {
               alt="Bombay"
               className="object-contain h-full"
             />
-            <p className="text-lg md:text-4xl font-bold font-neue">
-              MGOCSM
-            </p>
+            <p className="text-lg md:text-4xl font-bold font-neue">MGOCSM</p>
           </GridItem>
           <GridItem className="bg-[#FCECC7] col-span-2 row-span-3 flex items-center justify-between w-full">
             <div className="flex md:flex-col items-center justify-center gap-2 font-neue text-3xl font-bold text-brand-yellow w-full ">

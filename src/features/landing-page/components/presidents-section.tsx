@@ -3,7 +3,7 @@ import thirumeni from "@/assets/images/thirumeni.png";
 
 export default function Presidents() {
   return (
-    <div className="md:px-32 relative my-20 px-5">
+    <div className="md:px-32 relative my-20 px-5 bg-brand-bg">
       <h1 className="relative text-3xl md:text-4xl font-bold font-neue text-navy-blue tracking-tighter text-center md:leading-snug md:w-[60%] md:mx-auto mb-12 leading-snug">
         A Message from our
         <span className="bg-primary-light px-2 pt-2 text-navy-blue rounded-2xl font-neue md:mx-4 flex-nowrap mx-2">
