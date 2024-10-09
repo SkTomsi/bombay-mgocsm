@@ -164,7 +164,7 @@ export default function About() {
           </GridItem>
           <GridItem className="bg-[#FCECC7] col-span-2 row-span-3 flex items-center justify-between w-full">
             <div className="flex md:flex-col items-center justify-center gap-2 font-neue text-3xl font-bold text-brand-yellow w-full ">
-              <p>20</p>
+              <p>52+</p>
               <p>Parishes</p>
             </div>
           </GridItem>

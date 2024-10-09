@@ -4,7 +4,7 @@ import { IMAGES } from "@/assets";
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-blue py-8">
+    <footer className="bg-zinc-950 py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="mb-4 md:mb-0">
