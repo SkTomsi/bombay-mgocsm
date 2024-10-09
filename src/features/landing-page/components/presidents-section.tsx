@@ -1,9 +1,49 @@
 "use client";
 
 import { IMAGES } from "@/assets";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 export default function Presidents() {
+  const presidents = [
+    {
+      name: "John Doe",
+
+      image: IMAGES.thirumeni,
+    },
+    {
+      name: "John Doe",
+
+      image: IMAGES.assistantThirumeni,
+    },
+  ];
+
+  function QuoteCard({
+    name,
+    image,
+  }: {
+    name: string;
+    image: StaticImageData;
+  }) {
+    return (
+      <div className="bg-[#F0F3ED] flex rounded-3xl h-[463px] w-full overflow-hidden relative">
+        <div className="flex-grow relative">
+          <Image
+            src={image}
+            alt={name}
+            className="h-[80%] md:h-full w-fit object-contain absolute md:-bottom-[7%] bottom-0 left-0"
+          />
+        </div>
+        <div className="p-10 absolute flex items-end justify-end">
+          <p className="text-navy-blue text-md md:text-lg font-extrabold tracking-tighter w-1/2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida,
+            elit eu interdum pellentesque, mi eros porta ligula, in finibus eros
+            massa sit amet quam. Fusce cursus varius porttitor.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="md:px-32 relative my-20 px-5 bg-brand-bg">
       <motion.h1
@@ -36,26 +76,8 @@ export default function Presidents() {
         }}
         viewport={{ once: true }}
       >
-        {[1, 2].map((index) => (
-          <div
-            key={index}
-            className="bg-[#F0F3ED] flex rounded-3xl h-[463px] w-full overflow-hidden relative"
-          >
-            <div className="flex-grow relative">
-              <Image
-                src={IMAGES.thirumeni}
-                alt={`President ${index}`}
-                className="h-[80%] md:h-full w-fit object-contain absolute md:-bottom-[7%] bottom-0 left-0"
-              />
-            </div>
-            <div className="p-10 absolute flex items-end justify-end">
-              <p className="text-navy-blue text-md md:text-lg font-extrabold tracking-tighter w-1/2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                gravida, elit eu interdum pellentesque, mi eros porta ligula, in
-                finibus eros massa sit amet quam. Fusce cursus varius porttitor.
-              </p>
-            </div>
-          </div>
+        {presidents.map((president) => (
+          <QuoteCard key={president.name} {...president} />
         ))}
       </motion.div>
     </div>

@@ -8,6 +8,7 @@ import MusicIllustration from "@/assets/images/music.png";
 import Kratos24 from "@/assets/images/Kratos24.png";
 import thirumeni from "@/assets/images/thirumeni.png";
 import Logo from "@/assets/images/logo.png";
+import AssistantThirumeni from "@/assets/images/assist-thirumeni.png";
 
 export const IMAGES = {
   "group-photo": GroupPhoto,
@@ -19,5 +20,6 @@ export const IMAGES = {
   musicIllustration: MusicIllustration,
   kratos24: Kratos24,
   thirumeni: thirumeni,
+  assistantThirumeni: AssistantThirumeni,
   logo: Logo,
 };
