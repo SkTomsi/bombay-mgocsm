@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { CustomButton } from "./CustomButtom";
 import { IMAGES } from "@/assets";
+import { motion } from "framer-motion";
 
 export function EventGrid() {
   const EventCard = () => {
@@ -40,9 +43,21 @@ export function EventGrid() {
   };
 
   return (
-    <div className="md:flex-row flex flex-col gap-10 w-full md:justify-start overflow-auto ">
+    <motion.div
+      className="md:flex-row flex flex-col gap-10 w-full md:justify-start overflow-auto "
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        delay: 0.8,
+        duration: 0.8,
+        type: "spring",
+        damping: 40,
+        stiffness: 100,
+      }}
+      viewport={{ once: true }}
+    >
       <EventCard />
       <EventCard />
-    </div>
+    </motion.div>
   );
 }

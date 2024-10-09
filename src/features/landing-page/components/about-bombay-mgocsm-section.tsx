@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import wave from "@/assets/images/wave.png";
 import CrossIcon from "@/assets/images/Cross.svg";
@@ -5,6 +7,7 @@ import HandsIcon from "@/assets/images/Hands.svg";
 import BookIcon from "@/assets/images/Book.svg";
 import { cn } from "@/lib/utils";
 import Bombay from "@/assets/images/mumbai.svg";
+import { motion } from "framer-motion";
 
 export default function About() {
   const GridItem = ({
@@ -46,7 +49,18 @@ export default function About() {
 
   return (
     <div className="md:my-20 my-10 h-full bg-brand-bg">
-      <div className="relative">
+      <motion.div
+        className="relative"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.8,
+          type: "spring",
+          damping: 40,
+          stiffness: 100,
+        }}
+        viewport={{ once: true }}
+      >
         <Image
           src={wave}
           alt="wave"
@@ -59,8 +73,20 @@ export default function About() {
           </span>
           , branching into modern challenges
         </h1>
-      </div>
-      <div className="px-5 md:px-32 md:mt-20 mt-12">
+      </motion.div>
+      <motion.div
+        className="px-5 md:px-32 md:mt-20 mt-12"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.8,
+          duration: 0.8,
+          type: "spring",
+          damping: 40,
+          stiffness: 100,
+        }}
+        viewport={{ once: true }}
+      >
         <div className=" flex flex-col lg:grid gap-6 lg:grid-cols-9 lg:grid-rows-9 tracking-tighter">
           <GridItem className="bg-[#FCECC7] col-span-3 row-span-3">
             <div className="flex gap-x-3 items-center">
@@ -149,7 +175,7 @@ export default function About() {
             </div>
           </GridItem>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

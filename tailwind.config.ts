@@ -70,6 +70,21 @@ const config: Config = {
       boxShadow: {
         "brand-yellow": "6px 6px 0px 0px rgba(var(--brand-yellow))",
       },
+      keyframes: {
+        float: {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+          "100%": { transform: "translateY(0px)" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        float: "float 3s ease-in-out infinite",
+        fadeIn: "fadeIn 2s ease-in-out",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
