@@ -21,6 +21,7 @@ const config: Config = {
         "brand-yellow": "#F4BC43",
         "primary-light": "#F7D46C",
         "navy-blue": "#173F63",
+        "mgocsm-orange": "#E05827",
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",

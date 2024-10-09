@@ -27,7 +27,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center w-full md:max-w-7xl mx-auto px-5 pt-20">
+      <div className="relative z-10 flex flex-col items-center justify-center w-full md:max-w-7xl mx-auto px-5 md:pt-20 pt-32">
         <div className="w-full h-full relative z-10 items-center flex justify-center flex-col ">
           <p className="tracking-tight  border border-brand-yellow rounded-full px-5 w-fit bg-[#FDF3D4] mb-4 font-medium text-md">
             MGOCSM - DIOCESE OF BOMBAY
