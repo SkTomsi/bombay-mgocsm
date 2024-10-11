@@ -7,23 +7,29 @@ export default function Presidents() {
   const presidents = [
     {
       name: "John Doe",
-
+      quote:
+        "Let MGOCSM remain the spiritual torch bearer for the younger generation of Malankara Orthodox Church in future as well. God Bless you all.",
       image: IMAGES.thirumeni,
     },
     {
       name: "John Doe",
-
+      quote:
+        "I wish many more years of Growth, learning and making difference together. Let us Pray to God almighty for his bountiful blessings on our Church and MGOCSM",
       image: IMAGES.assistantThirumeni,
     },
   ];
 
   function QuoteCard({
-    name,
-    image,
+    data,
   }: {
-    name: string;
-    image: StaticImageData;
+    data: {
+      name: string;
+      quote: string;
+      image: StaticImageData;
+    };
   }) {
+    const { image, name, quote } = data;
+
     return (
       <div className="bg-[#F0F3ED] flex rounded-3xl h-[463px] w-full overflow-hidden relative">
         <div className="flex-grow relative">
@@ -34,10 +40,8 @@ export default function Presidents() {
           />
         </div>
         <div className="p-10 absolute flex items-end justify-end">
-          <p className="text-navy-blue text-md md:text-lg font-extrabold tracking-tighter w-1/2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida,
-            elit eu interdum pellentesque, mi eros porta ligula, in finibus eros
-            massa sit amet quam. Fusce cursus varius porttitor.
+          <p className="text-navy-blue text-md md:text-lg font-extrabold tracking-tighter w-1/2 text-right md:text-left pt-0 md:pt-6">
+            {quote}
           </p>
         </div>
       </div>
@@ -77,7 +81,7 @@ export default function Presidents() {
         viewport={{ once: true }}
       >
         {presidents.map((president) => (
-          <QuoteCard key={president.name} {...president} />
+          <QuoteCard key={president.name} data={president} />
         ))}
       </motion.div>
     </div>

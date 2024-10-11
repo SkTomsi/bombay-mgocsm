@@ -5,6 +5,9 @@ import Image from "next/image";
 import React from "react";
 import { CustomButton } from "./CustomButtom";
 import { motion } from "framer-motion";
+// import { FlipWords } from "@/components/ui/flip-words";
+
+// const words = ["मुंबई", "Bombay", "മുംബൈ"];
 
 export function Hero() {
   return (
@@ -65,7 +68,8 @@ export function Hero() {
               Orthodox Christian <br className="inline-block md:hidden" />
             </span>
             youth in <br className="hidden md:block" />
-            <span className="text-navy-blue rounded-2xl font-neue mx-4">
+            <span className="text-navy-blue rounded-2xl font-crimson font-bold mx-4">
+              {/* <FlipWords words={["मुंबई", "Bombay", "മുംബൈ"]} /> */}
               मुंबई
             </span>
             Today?
