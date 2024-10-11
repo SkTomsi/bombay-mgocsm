@@ -57,7 +57,6 @@ export function EventGrid() {
       viewport={{ once: true }}
     >
       <EventCard />
-      <EventCard />
     </motion.div>
   );
 }
