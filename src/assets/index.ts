@@ -9,6 +9,8 @@ import Kratos24 from "@/assets/images/Kratos24.png";
 import thirumeni from "@/assets/images/thirumeni.png";
 import Logo from "@/assets/images/logo.png";
 import AssistantThirumeni from "@/assets/images/assist-thirumeni.png";
+import hat from "@/assets/hat.png";
+import bells from "@/assets/bells.png";
 
 export const IMAGES = {
   "group-photo": GroupPhoto,
@@ -22,4 +24,8 @@ export const IMAGES = {
   thirumeni: thirumeni,
   assistantThirumeni: AssistantThirumeni,
   logo: Logo,
+  "christmas-theme": {
+    hat: hat,
+    bells: bells,
+  },
 };

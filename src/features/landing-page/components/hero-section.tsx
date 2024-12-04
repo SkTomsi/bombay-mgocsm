@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <div className="flex flex-col items-center justify-items-center gap-4 relative w-full text-center pb-10 md:pb-30">
+    <div className="flex flex-col items-center justify-items-center gap-4 relative w-full text-center pb-10 md:pb-30 pt-4 md:pt-0">
       <motion.div className="-z-10 bg-[url('/blue-bg.webp')] bg-no-repeat absolute bg-cover max-sm:bg-center inset-0 top-[50%] md:top-80" />
       <div className="absolute inset-0 -z-20 bg-[url('/contour.png')] bg-cover bg-center opacity-20 [mask-image:linear-gradient(to_top,transparent,black_20%,black_80%,transparent)]" />
       <div className="h-full w-full absolute top-0 left-0 bg-brand-bg -z-30" />
@@ -49,6 +49,11 @@ export function Hero() {
             }}
           >
             MGOCSM - DIOCESE OF BOMBAY
+            <Image
+              src={IMAGES["christmas-theme"].bells}
+              alt="hat"
+              className="md:hidden absolute w-14 h-14 -top-[4.3rem] left-1/2 transform -translate-x-1/2 -rotate-[2deg]"
+            />
           </motion.p>
           <motion.h1
             className="text-[35px] md:text-[56px] font-bold font-crimson tracking-tighter text-brand-yellow text-center leading-relaxed md:leading-normal text-balance w-full"
@@ -64,8 +69,18 @@ export function Hero() {
           >
             What does it mean to be <br className="md:inline-block hidden" /> an
             <br className="inline-block md:hidden" />
-            <span className="bg-primary-light px-2 pt-2 text-navy-blue rounded-2xl font-neue md:mx-4">
+            <span className="bg-primary-light px-4 md:px-2 pt-2 text-navy-blue rounded-2xl font-neue md:mx-4 relative">
               Orthodox Christian <br className="inline-block md:hidden" />
+              <Image
+                src={IMAGES["christmas-theme"].hat}
+                alt="hat"
+                className="hidden md:block absolute md:-top-9 md:-left-5 object-contain  md:w-[60px] md:h-[60px] -rotate-[2deg]"
+              />
+              <Image
+                src={IMAGES["christmas-theme"].bells}
+                alt="hat"
+                className="hidden md:block absolute  md:-bottom-9 md:-right-5 object-contain md:w-[60px] md:h-[60px] -rotate-[2deg]"
+              />
             </span>
             youth in <br className="hidden md:block" />
             <span className="text-navy-blue rounded-2xl font-crimson font-bold mx-4">
