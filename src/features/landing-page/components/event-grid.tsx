@@ -54,9 +54,9 @@ export function EventGrid() {
             </p>
           </div>
           {buttonLink && buttonText && (
-            <Link href={buttonLink}>
+            <a href={buttonLink}>
               <CustomButton text={buttonText} className="w-full md:w-fit" />
-            </Link>
+            </a>
           )}
         </div>
       </div>
