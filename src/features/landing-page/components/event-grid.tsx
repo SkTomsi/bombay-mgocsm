@@ -3,6 +3,7 @@
 import { IMAGES } from "@/assets";
 import { motion } from "framer-motion";
 import Image, { type StaticImageData } from "next/image";
+import Link from "next/link";
 import { CustomButton } from "./CustomButtom";
 
 export function EventGrid() {
@@ -13,13 +14,15 @@ export function EventGrid() {
     date,
     place,
     buttonText,
+    buttonLink,
   }: {
     images: StaticImageData;
     eventName: string;
     subTitle?: string;
     date: string;
     place: string;
-    buttonText: string;
+    buttonText?: string;
+    buttonLink?: string;
   }) => {
     return (
       <div className="bg-[#FFF4D4] border border-brand-yellow flex items-start justify-start rounded-2xl w-full p-4 gap-4 h-48 md:h-auto md:min-w-[80%] md:max-w-[80%] md:gap-12">
@@ -50,7 +53,11 @@ export function EventGrid() {
               {place}
             </p>
           </div>
-          <CustomButton text={buttonText} className="w-full md:w-fit" />
+          {buttonLink && buttonText && (
+            <Link href={buttonLink}>
+              <CustomButton text={buttonText} className="w-full md:w-fit" />
+            </Link>
+          )}
         </div>
       </div>
     );
@@ -63,8 +70,8 @@ export function EventGrid() {
       title: "Aura 24",
       date: "8th Decemeber, 2024",
       location: "St.Thomas Orthodox Syrian Valiyapally, Malad",
-
       buttonText: "Watch Live",
+      buttonLink: "ht",
     },
     {
       id: 1,
@@ -73,7 +80,6 @@ export function EventGrid() {
       subtitle: "Annual Conference",
       date: "11th - 13th Oct, 2024",
       location: "Gregorian Community, Roha",
-      buttonText: "Register",
     },
   ];
 
@@ -100,6 +106,7 @@ export function EventGrid() {
           date={event.date}
           place={event.location}
           buttonText={event.buttonText}
+          buttonLink={event.buttonLink}
         />
       ))}
     </motion.div>

@@ -74,7 +74,7 @@ export default function Header() {
             <div className="flex justify-end p-4">
               <Button
                 onClick={toggleMobileMenu}
-                className="text-black focus:outline-none"
+                variant={"ghost"}
                 aria-label="Close mobile menu"
               >
                 <X size={24} />
