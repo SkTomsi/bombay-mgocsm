@@ -67,11 +67,11 @@ export function EventGrid() {
     {
       id: 2,
       image: IMAGES.aura,
-      title: "Aura 24",
+      title: "Aura 2024",
       date: "8th Decemeber, 2024",
       location: "St.Thomas Orthodox Syrian Valiyapally, Malad",
       buttonText: "Watch Live",
-      buttonLink: "ht",
+      buttonLink: "https://www.youtube.com/watch?v=jcUWDhTSjBY",
     },
     {
       id: 1,
