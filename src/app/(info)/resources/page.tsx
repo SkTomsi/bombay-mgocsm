@@ -97,7 +97,6 @@ export default function Page() {
 										<p className="text-base font-medium tracking-tight">
 											Tone {tone.id}
 										</p>
-										{/* biome-ignore lint/a11y/useMediaCaption: <explanation> */}
 										<audio
 											controls
 											src={tone.audio}
