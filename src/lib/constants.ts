@@ -102,3 +102,73 @@ export const LITURGICAL_TONES = {
 		},
 	],
 };
+export const KUKILION = {
+	pethgomo: [
+		{
+			id: 1,
+			audio: "/audios/kukilion/pethgomo/1.mp3",
+		},
+		{
+			id: 2,
+			audio: "/audios/kukilion/pethgomo/2.mp3",
+		},
+		{
+			id: 3,
+			audio: "/audios/kukilion/pethgomo/3.mp3",
+		},
+		{
+			id: 4,
+			audio: "/audios/kukilion/pethgomo/4.mp3",
+		},
+		{
+			id: 5,
+			audio: "/audios/kukilion/pethgomo/5.mp3",
+		},
+		{
+			id: 6,
+			audio: "/audios/kukilion/pethgomo/6.mp3",
+		},
+		{
+			id: 7,
+			audio: "/audios/kukilion/pethgomo/7.mp3",
+		},
+		{
+			id: 8,
+			audio: "/audios/kukilion/pethgomo/8.mp3",
+		},
+	],
+	ekbo: [
+		{
+			id: 1,
+			audio: "/audios/kukilion/ekbo/1.mp3",
+		},
+		{
+			id: 2,
+			audio: "/audios/kukilion/ekbo/2.mp3",
+		},
+		{
+			id: 3,
+			audio: "/audios/kukilion/ekbo/3.mp3",
+		},
+		{
+			id: 4,
+			audio: "/audios/kukilion/ekbo/4.mp3",
+		},
+		{
+			id: 5,
+			audio: "/audios/kukilion/ekbo/5.mp3",
+		},
+		{
+			id: 6,
+			audio: "/audios/kukilion/ekbo/6.mp3",
+		},
+		{
+			id: 7,
+			audio: "/audios/kukilion/ekbo/7.mp3",
+		},
+		{
+			id: 8,
+			audio: "/audios/kukilion/ekbo/8.mp3",
+		},
+	],
+};

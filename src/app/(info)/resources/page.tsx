@@ -5,7 +5,7 @@ import {
 	AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Card } from "@/components/ui/card";
-import { LITURGICAL_TONES } from "@/lib/constants";
+import { KUKILION, LITURGICAL_TONES } from "@/lib/constants";
 import { Info } from "lucide-react";
 
 export default function Page() {
@@ -92,6 +92,53 @@ export default function Page() {
 						</AccordionTrigger>
 						<AccordionContent className="flex flex-col gap-4 lg:grid lg:grid-cols-4">
 							{LITURGICAL_TONES["category-3"].map((tone) => (
+								<Card key={tone.id} className="p-4">
+									<div className="flex flex-col gap-4">
+										<p className="text-base font-medium tracking-tight">
+											Tone {tone.id}
+										</p>
+										{/* biome-ignore lint/a11y/useMediaCaption: <explanation> */}
+										<audio
+											controls
+											src={tone.audio}
+											className="w-full bg-white"
+											style={{ backgroundColor: "white" }}
+										/>
+									</div>
+								</Card>
+							))}
+						</AccordionContent>
+					</AccordionItem>
+				</Accordion>
+			</div>
+			<div className="flex flex-col gap-4 lg:px-10">
+				<p className="text-2xl tracking-tight font-bold">Kukilion</p>
+				<Accordion type="single" collapsible className="w-full">
+					<AccordionItem value="item-1">
+						<AccordionTrigger>1. Pethgomo</AccordionTrigger>
+						<AccordionContent className="flex flex-col gap-4 lg:grid lg:grid-cols-4">
+							{KUKILION.pethgomo.map((tone) => (
+								<Card key={tone.id} className="p-4">
+									<div className="flex flex-col gap-4">
+										<p className="text-base font-medium tracking-tight">
+											Tone {tone.id}
+										</p>
+										{/* biome-ignore lint/a11y/useMediaCaption: <explanation> */}
+										<audio
+											controls
+											src={tone.audio}
+											className="w-full bg-white"
+											style={{ backgroundColor: "white" }}
+										/>
+									</div>
+								</Card>
+							))}
+						</AccordionContent>
+					</AccordionItem>
+					<AccordionItem value="item-2">
+						<AccordionTrigger>2. Ekbo</AccordionTrigger>
+						<AccordionContent className="flex flex-col gap-4 lg:grid lg:grid-cols-4">
+							{KUKILION.ekbo.map((tone) => (
 								<Card key={tone.id} className="p-4">
 									<div className="flex flex-col gap-4">
 										<p className="text-base font-medium tracking-tight">
