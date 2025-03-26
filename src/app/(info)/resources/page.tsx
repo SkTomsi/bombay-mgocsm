@@ -37,12 +37,13 @@ export default function Page() {
 					</div>
 				</div>
 			</div>
+			<p className="text-3xl tracking-tight font-bold">Liturgical Tones</p>
 			<div className="flex flex-col gap-4 lg:px-10">
-				<p className="text-2xl tracking-tight font-bold">Liturgical Tones</p>
+				<p className="text-2xl tracking-tight font-bold">Boovoso</p>
 				<Accordion type="single" collapsible className="w-full">
 					<AccordionItem value="item-1">
 						<AccordionTrigger>
-							Category 1 - Boovoso of Mar Aprem
+							1. Boovoso of Mar Aprem
 						</AccordionTrigger>
 						<AccordionContent className="flex flex-col gap-4 lg:grid lg:grid-cols-4">
 							{LITURGICAL_TONES["category-1"].map((tone) => (
@@ -65,7 +66,7 @@ export default function Page() {
 					</AccordionItem>
 					<AccordionItem value="item-2">
 						<AccordionTrigger>
-							Category 2 - Boovoso of Mar Balai
+							2. Boovoso of Mar Balai
 						</AccordionTrigger>
 						<AccordionContent className="flex flex-col gap-4 lg:grid lg:grid-cols-4">
 							{LITURGICAL_TONES["category-2"].map((tone) => (
@@ -88,7 +89,7 @@ export default function Page() {
 					</AccordionItem>
 					<AccordionItem value="item-3">
 						<AccordionTrigger>
-							Category 2 - Boovoso of Mar Yakob
+							3. Boovoso of Mar Yakob
 						</AccordionTrigger>
 						<AccordionContent className="flex flex-col gap-4 lg:grid lg:grid-cols-4">
 							{LITURGICAL_TONES["category-3"].map((tone) => (
