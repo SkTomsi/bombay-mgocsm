@@ -9,7 +9,7 @@ export function CustomButton({
 }) {
   return (
     <Button
-      className={`bg-navy-blue text-white font-crimson font-bold text-md shadow-brand-yellow w-fit ${className}`}
+      className={`bg-navy-blue text-white font-crimson font-bold text-sm md:text-md w-fit tracking-normal ${className}`}
     >
       {text}
     </Button>

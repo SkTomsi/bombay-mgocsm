@@ -12,6 +12,7 @@ import Study from "@/assets/images/study.webp";
 import thirumeni from "@/assets/images/thirumeni.png";
 import WaveBackground from "@/assets/images/wave-history.png";
 import Worship from "@/assets/images/worship.webp";
+import AC2025 from "@/assets/images/ac2025.jpeg"
 
 export const IMAGES = {
   "group-photo": GroupPhoto,
@@ -26,6 +27,7 @@ export const IMAGES = {
   assistantThirumeni: AssistantThirumeni,
   logo: Logo,
   aura: aura,
+  ac2025: AC2025,
   "christmas-theme": {
     hat: hat,
     bells: bells,
