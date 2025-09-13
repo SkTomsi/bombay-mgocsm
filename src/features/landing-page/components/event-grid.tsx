@@ -63,7 +63,10 @@ export function EventGrid() {
             </p>
             {buttonLink && buttonText && (
               <a href={buttonLink}>
-                <CustomButton text={buttonText} className="w-full md:w-fit" />
+                <CustomButton
+                  text={buttonText}
+                  className="w-full md:w-fit mt-2"
+                />
               </a>
             )}
           </div>
@@ -78,7 +81,7 @@ export function EventGrid() {
 
   return (
     <motion.div
-      className="flex flex-col md:flex-row w-full overflow-auto py-5 no-scrollbar md:h-[600px] mx-auto max-w-7xl gap-5 "
+      className="grid lg:grid-cols-2 grid-cols-1  w-full overflow-auto py-5 no-scrollbar lg:h-fit mx-auto max-w-8xl gap-5 "
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
@@ -95,7 +98,7 @@ export function EventGrid() {
         <div
           key={liveEvents[0].id}
           className={cn(
-            "bg-[#FFF4D4] border border-brand-yellow flex rounded-2xl w-full p-4 gap-4 h-56 md:h-full md:gap-8"
+            "bg-[#FFF4D4] border border-brand-yellow flex rounded-2xl w-full p-4 gap-4 h-fit md:h-full md:gap-8"
           )}
         >
           <div className="h-full md:w-full w-5/6 object-contain rounded-xl overflow-hidden border border-white shadow-lg">
@@ -127,10 +130,10 @@ export function EventGrid() {
                 {liveEvents[0].location}
               </p>
               {liveEvents[0].buttonLink && liveEvents[0].buttonText && (
-                <Link href={liveEvents[0].buttonLink} className="mt-2">
+                <Link href={liveEvents[0].buttonLink}>
                   <CustomButton
                     text={liveEvents[0].buttonText}
-                    className="w-full md:w-fit"
+                    className="w-full md:w-fit mt-2"
                   />
                 </Link>
               )}
@@ -142,7 +145,7 @@ export function EventGrid() {
       {/* Previous Events */}
       {previousEvents.length > 0 && (
         <motion.div
-          className="flex flex-col w-full md:justify-start overflow-auto gap-5 md:[mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparen)] no-scrollbar"
+          className="flex flex-col w-full  overflow-auto gap-5 md:[mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparen)] no-scrollbar"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{

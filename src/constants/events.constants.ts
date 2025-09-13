@@ -17,7 +17,7 @@ interface Event {
 export const events: Array<Event> = [
   {
     title: "117th Annual Conference",
-    subtitle: "Annual Conference",
+    subtitle: "Global Conference",
     date: "17th - 20th Oct, 2025",
     location: "Gregorian Community, Roha",
     buttonText: "Register Now",
