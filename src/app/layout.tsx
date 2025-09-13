@@ -20,11 +20,11 @@ const neue = localFont({
 
 export const metadata: Metadata = {
   icons: "/Logo.png",
-  metadataBase: new URL("https://bombay-mgocsm.vercel.app/"),
+  metadataBase: new URL("https://bombaymgocsm.in"),
   title: "Bombay MGOCSM",
-  description: "This is the official website of Bombay MGOCSM",
+  description: "Official website of Bombay MGOCSM",
   creator: "Tomcy Thomas",
-  authors: [{ name: "Tomcy Thomas", url: "https://hello-sktomsi.vercel.app/" }],
+  authors: [{ name: "Tomcy Thomas", url: "https://sktomsi.lol" }],
   publisher: "Tomcy Thomas",
   alternates: {
     canonical: "/",
@@ -44,12 +44,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bombay MGOCSM",
     description: "Offical Website of Bombay MGOCSM",
-    url: "https://bombay-mgocsm.vercel.app/",
+    url: "https://bombaymgocsm.in",
     siteName: "Bombay MGOCSM",
     images: [
       {
-        url: "https://bombay-mgocsm.vercel.app/og-image.png",
-        alt: "This is the official website of Bombay MGOCSM",
+        url: "https://bombaymgocsm.in/og-image.png",
+        alt: "Official website of Bombay MGOCSM",
       },
     ],
     locale: "en_US",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary",
-    images: "https://bombay-mgocsm.vercel.app/og-image.png",
+    images: "https://bombaymgocsm.in/og-image.png",
   },
 };
 
