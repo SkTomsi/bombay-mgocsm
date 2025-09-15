@@ -30,7 +30,7 @@ export const events: Array<Event> = [
     title: "Aura 2024",
     date: "8th Decemeber, 2024",
     location: "St.Thomas Orthodox Syrian Valiyapally, Malad",
-    buttonText: "Watch Live",
+    buttonText: "Watch",
     buttonLink: "https://www.youtube.com/watch?v=jcUWDhTSjBY",
   },
   {
